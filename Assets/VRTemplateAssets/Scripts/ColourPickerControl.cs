@@ -98,6 +98,8 @@ public class ColourPickerControl : MonoBehaviour
 
         outputTexture.Apply();
 
+        hexInputField.text = ColorUtility.ToHtmlStringRGB(currentColour);
+
         if (leftColorSphere != null)
         {
             Renderer leftRenderer = leftColorSphere.GetComponent<Renderer>();
